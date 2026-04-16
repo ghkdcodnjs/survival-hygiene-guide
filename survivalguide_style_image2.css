@@ -1,0 +1,79 @@
+/* style.css 파일 내용 */
+.image-container {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;      /* 위아래 본문과의 간격 */
+}
+.image-container img {
+    width: 48%;
+    height: 48%;
+}
+
+/* 1. Regular(보통) 두께 등록 */
+@font-face {
+    font-family: 'MyBrandFont'; 
+    src: url('Paperlogy-1_font/Paperlogy-4Regular.ttf') format('truetype'); /* 확장자 ttf, 포맷 truetype */
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 2. Bold(굵게) 두께 등록 */
+@font-face {
+    font-family: 'MyBrandFont'; 
+    src: url('Paperlogy-1_font/Paperlogy-8ExtraBold.ttf') format('truetype'); /* 확장자 ttf, 포맷 truetype */
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 3. 실제 적용 */
+body {
+    font-family: 'MyBrandFont', sans-serif;
+    font-weight: 400; /* 기본은 Regular */
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-weight: 700; /* 제목은 Bold */
+}
+
+/* 강조하고 싶은 텍스트가 있다면 */
+.emphasis {
+    font-weight: 550;
+}
+
+/* 1. 메인 페이지 텍스트 전용 색상 */
+.main-page {
+    color: #edeba7;           /* 메인 페이지 글자: 노란색 */
+}
+
+.main-page a {
+    color: #ff8e31;           /* 메인 페이지 링크: 주황색 */
+}
+
+.detail-page h1 {
+    color: #ffffff;           /* 상세 페이지 제목: 하얀색 */
+}
+
+.detail-page {
+    color: #131212;           /* 상세 페이지 본문: 회색 */
+}
+
+.target-text {
+    text-align: center;
+}
+
+.content-section {
+    /* rgba(빨강, 초록, 파랑, 투명도) : 투명도는 0(투명) ~ 1(불투명) 사이 */
+    background-color: rgba(247, 245, 233, 0.804); /* 아주 연한 검은색 */
+    padding: 3px 20px;       /* 위아래 40px, 좌우 20px 여백 */
+    border-radius: 10px;      /* 모서리를 살짝 둥글게 */
+    margin: 20px 0;           /* 박스 위아래 바깥 간격 */
+}
+
+.main-section {
+    /* rgba(빨강, 초록, 파랑, 투명도) : 투명도는 0(투명) ~ 1(불투명) 사이 */
+    background-color: rgba(207, 187, 224, 0.232); /* 아주 연한 검은색 */
+    padding: 13px 20px;       /* 위아래 40px, 좌우 20px 여백 */
+    border-radius: 10px;      /* 모서리를 살짝 둥글게 */
+    margin: 20px 10px;           /* 박스 위아래 바깥 간격 */
+}
